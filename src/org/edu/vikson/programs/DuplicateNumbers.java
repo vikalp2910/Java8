@@ -1,4 +1,4 @@
-package com.edu.vikson.programs;
+package org.edu.vikson.programs;
 
 import java.util.ArrayList;
 import java.util.Arrays;

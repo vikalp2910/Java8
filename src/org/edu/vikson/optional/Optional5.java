@@ -1,4 +1,4 @@
-package com.edu.vikson.optional;
+package org.edu.vikson.optional;
 
 import java.util.Optional;
 import java.util.function.Supplier;

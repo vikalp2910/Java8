@@ -3,7 +3,7 @@ package org.edu.vikson.coding.pro1;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Program {
+public class Program01 {
 
 	public static void main(String[] args) {
 		List<Employee> list=new ArrayList<Employee>();

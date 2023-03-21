@@ -6,25 +6,26 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class FlatMap {
+public class P14FlatMap {
 
 	public static void main(String[] args) {
       
-		FlatMapPojo f1=new FlatMapPojo(29, "vikalp", Arrays.asList("Bangalore","Delhi"));
-		FlatMapPojo f2=new FlatMapPojo(10, "sonkar", Arrays.asList("Bangalore","Pune"));
-		FlatMapPojo f3=new FlatMapPojo(01, "vikson", Arrays.asList("Noida","Hyderabad","Pune"));
+		P14FlatMapPojo f1=new P14FlatMapPojo(29, "vikalp", Arrays.asList("Bangalore","Delhi"));
+		P14FlatMapPojo f2=new P14FlatMapPojo(10, "sonkar", Arrays.asList("Bangalore","Pune"));
+		P14FlatMapPojo f3=new P14FlatMapPojo(01, "vikson", Arrays.asList("Noida","Hyderabad","Pune"));
 	    
-		List<FlatMapPojo> list=new ArrayList<FlatMapPojo>();
+		List<P14FlatMapPojo> list=new ArrayList<P14FlatMapPojo>();
 		list.add(f1);list.add(f2);list.add(f3);
 		
 		System.out.println(list);
-		
 		List<Integer> idList= list.stream().map(e->e.getId()).collect(Collectors.toList());
 		System.out.println(idList);
 		
+		System.out.println("===============");
 		List<List<String>> cityList= list.stream().map(e->e.getCity()).collect(Collectors.toList());
 		System.out.println(cityList);
 		
+		System.out.println("===============");
 		Set<String> cityList2=list.stream().flatMap(e->e.getCity().stream()).collect(Collectors.toSet());
 		System.out.println(cityList2);
 		

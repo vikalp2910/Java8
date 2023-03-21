@@ -2,7 +2,7 @@ package org.edu.vikson.programs;
 
 import java.util.List;
 
-public class FlatMapPojo {
+public class P14FlatMapPojo {
 	
 	private int id;
 	private String name ;
@@ -10,7 +10,7 @@ public class FlatMapPojo {
 	
 	
 	
-	public FlatMapPojo(int id, String name, List<String> city) {
+	public P14FlatMapPojo(int id, String name, List<String> city) {
 		super();
 		this.id = id;
 		this.name = name;

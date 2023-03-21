@@ -2,12 +2,12 @@ package org.edu.vikson.programs;
 
 import java.util.stream.IntStream;
 
-public class PrimeNumber {
+public class P11PrimeOfNumber {
 
 	public static void main(String[] args) {
 		
 		System.out.println(isPrime(5));
-		System.out.println(isPrimelambda(11));
+		System.out.println(isPrimelambda(7));
 
 	}
 	

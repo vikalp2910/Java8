@@ -2,6 +2,7 @@ package org.edu.vikson.coding.pro2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Program05 {
@@ -23,6 +24,11 @@ public class Program05 {
 		    .collect( Collectors.groupingBy(Employee::getGender , Collectors.averagingInt(Employee::getSalary) ) );
 		
 		System.out.println(result);
+		
+		System.out.println("=======sum salary of male and female=================");
+		var result2=list.stream()
+			    .collect(Collectors.summingInt(Employee::getSalary)  );
+		System.out.println(result2);
 
 	}
 

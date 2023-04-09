@@ -9,9 +9,11 @@ public class P01SumOfNumbers {
 
 	public static void main(String[] args) {
 		
-		List<Integer> list=Arrays.asList(1,2,3,4,5);
+		List<Integer> list=Arrays.asList(1,2,3,4,5,6);
 		
 		System.out.println("=========Way 1 sum of number ==============");
+		
+		
 	    int result1=list.stream().mapToInt(i->i).sum();
 	    System.out.println(result1);
 

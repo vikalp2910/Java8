@@ -21,14 +21,15 @@ public class P14FlatMap {
 		List<Integer> idList= list.stream().map(e->e.getId()).collect(Collectors.toList());
 		System.out.println(idList);
 		
-		System.out.println("===============");
+		System.out.println("=======map resp========");
 		List<List<String>> cityList= list.stream().map(e->e.getCity()).collect(Collectors.toList());
 		System.out.println(cityList);
 		
-		System.out.println("===============");
+		System.out.println("======flat map resp=========");
 		Set<String> cityList2=list.stream().flatMap(e->e.getCity().stream()).collect(Collectors.toSet());
 		System.out.println(cityList2);
 		
+		System.out.println("=========end========");
 		List<String> cityList3=cityList2.stream().collect(Collectors.toList()).stream().sorted().collect(Collectors.toList());
 		System.out.println(cityList3);
 		

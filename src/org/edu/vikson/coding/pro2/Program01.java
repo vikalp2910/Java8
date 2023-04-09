@@ -31,11 +31,6 @@ public class Program01 {
 		 
 		 System.out.println("=======Highest Paid Employee=================");
 		                        
-	
-		
-		
-		
-		
 	}
 
 }
